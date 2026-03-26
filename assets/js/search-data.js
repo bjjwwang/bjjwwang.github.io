@@ -72,7 +72,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-claude-skills-深度解读-从理解到实践-再到未来路由的想象",
+            },{id: "post-icse-2026-程序分析论文深度解读",
+        
+          title: "ICSE 2026 程序分析论文深度解读",
+        
+        description: "对 ICSE 2026 中程序分析方向论文的深度解读与分析",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/icse2026-program-analysis-survey/";
+          
+        },
+      },{id: "post-claude-skills-深度解读-从理解到实践-再到未来路由的想象",
         
           title: "Claude Skills 深度解读：从理解到实践，再到未来路由的想象",
         
