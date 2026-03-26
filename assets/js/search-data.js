@@ -72,7 +72,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-a-post-with-plotly-js",
+            },{id: "post-claude-skills-深度解读-从理解到实践-再到未来路由的想象",
+        
+          title: "Claude Skills 深度解读：从理解到实践，再到未来路由的想象",
+        
+        description: "基于对 claude-skills 仓库的完整研究，深度解析 Claude Skills 的设计模式、最佳实践与路由机制设想",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/claude-skills-deep-dive/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
