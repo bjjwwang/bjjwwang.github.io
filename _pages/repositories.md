@@ -27,5 +27,8 @@ nav_order: 4
 |:-----------|:-----------|:---------|
 | [SiftAbs](https://github.com/bjjwwang/SiftAbs) | Selective widening for efficient abstract interpretation (OOPSLA 2025) | C++ |
 | [SVF](https://github.com/SVF-tools/SVF) | Static Value-Flow Analysis framework for C/C++ programs (contributor) | C++ |
+| [SVF-Python](https://github.com/SVF-tools/SVF-Python) | Python bindings for SVF, enabling static analysis scripting in Python | Python/C++ |
 | [SVF-CVE](https://github.com/bjjwwang/SVF-CVE) | Evaluating SVF-based static analysis on real-world CVE vulnerabilities | C++ |
-| [SVF-Teaching-CI](https://github.com/bjjwwang/SVF-Teaching-CI) | CI/CD and Docker infrastructure for SVF-based teaching at UNSW/UTS | Shell |
+| [Teaching-Software-Analysis](https://github.com/SVF-tools/Teaching-Software-Analysis) | Course materials and assignments for teaching software analysis with SVF | C++ |
+| [AlphaScout](https://github.com/bjjwwang/AlphaScout) | AI-powered code analysis and vulnerability detection tool | Python |
+| [USStockBase](https://github.com/bjjwwang/USStockBase) | US stock market data collection and analysis toolkit | Python |
