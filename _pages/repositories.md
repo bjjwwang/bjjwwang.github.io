@@ -7,34 +7,29 @@ nav: true
 nav_order: 4
 ---
 
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-{% if site.data.repositories.github_users %}
-  {% for user in site.data.repositories.github_users %}
-    {% include repository/repo_user.liquid username=user %}
-  {% endfor %}
-{% endif %}
+<div class="row mb-4">
+  <div class="col-md-3 text-center">
+    <img src="{{ '/assets/img/github_avatar.jpg' | relative_url }}" alt="GitHub Avatar" class="img-fluid rounded-circle" style="max-width: 150px;">
+  </div>
+  <div class="col-md-9 d-flex align-items-center">
+    <div>
+      <h3><a href="https://github.com/bjjwwang" target="_blank">bjjwwang</a></h3>
+      <p>Jiawei Wang · UNSW CSE PhD Student · Static Analysis & Abstract Interpretation</p>
+    </div>
+  </div>
 </div>
 
 ---
-
-{% if site.repo_trophies.enabled %}
-{% for user in site.data.repositories.github_users %}
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% include repository/repo_trophies.liquid username=user %}
-  </div>
-
----
-
-{% endfor %}
-{% endif %}
-
-{% if site.data.repositories.github_repos %}
 
 ## Highlighted Repositories
 
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.liquid repository=repo %}
-  {% endfor %}
+<div class="table-responsive">
+
+| Repository | Description | Language |
+|:-----------|:-----------|:---------|
+| [SiftAbs](https://github.com/bjjwwang/SiftAbs) | Selective widening for efficient abstract interpretation (OOPSLA 2025) | C++ |
+| [SVF](https://github.com/SVF-tools/SVF) | Static Value-Flow Analysis framework for C/C++ programs (contributor) | C++ |
+| [SVF-CVE](https://github.com/bjjwwang/SVF-CVE) | Evaluating SVF-based static analysis on real-world CVE vulnerabilities | C++ |
+| [SVF-Teaching-CI](https://github.com/bjjwwang/SVF-Teaching-CI) | CI/CD and Docker infrastructure for SVF-based teaching at UNSW/UTS | Shell |
+
 </div>
-{% endif %}
