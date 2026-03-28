@@ -130,27 +130,7 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-efficient-abstract-interpretation-via-selective-widening-has-been-accepted-at-oopsla-2025",
           title: 'Our paper “Efficient Abstract Interpretation via Selective Widening” has been accepted at OOPSLA...',
           description: "",
-          section: "News",},{id: "projects-siftabs",
-          title: 'SiftAbs',
-          description: "Selective widening for efficient abstract interpretation, enabling precise and scalable static analysis of real-world programs.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/siftabs/";
-            },},{id: "projects-svf-cve",
-          title: 'SVF-CVE',
-          description: "Evaluating static analysis techniques on real-world CVE vulnerabilities using the SVF framework.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/svf-cve/";
-            },},{id: "projects-svf-teaching",
-          title: 'SVF Teaching',
-          description: "CI/CD infrastructure and Docker tooling for SVF-based software analysis teaching at UNSW.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/svf-teaching/";
-            },},{id: "projects-svf",
-          title: 'SVF',
-          description: "Static Value-Flow Analysis framework for source code. An open-source compiler tool for interprocedural static analysis of C/C++ programs.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/svf/";
-            },},{
+          section: "News",},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
