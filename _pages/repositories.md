@@ -23,13 +23,9 @@ nav_order: 4
 
 ## Highlighted Repositories
 
-<div class="table-responsive">
-
 | Repository | Description | Language |
 |:-----------|:-----------|:---------|
 | [SiftAbs](https://github.com/bjjwwang/SiftAbs) | Selective widening for efficient abstract interpretation (OOPSLA 2025) | C++ |
 | [SVF](https://github.com/SVF-tools/SVF) | Static Value-Flow Analysis framework for C/C++ programs (contributor) | C++ |
 | [SVF-CVE](https://github.com/bjjwwang/SVF-CVE) | Evaluating SVF-based static analysis on real-world CVE vulnerabilities | C++ |
 | [SVF-Teaching-CI](https://github.com/bjjwwang/SVF-Teaching-CI) | CI/CD and Docker infrastructure for SVF-based teaching at UNSW/UTS | Shell |
-
-</div>
