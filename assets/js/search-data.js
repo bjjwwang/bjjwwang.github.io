@@ -51,6 +51,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
+        },{id: "nav-bookshelf",
+          title: "bookshelf",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/books/";
+          },
         },{id: "dropdown-bookshelf",
               title: "bookshelf",
               description: "",
@@ -87,11 +94,36 @@ ninja.data = [{
             window.location.href = "/blog/2026/claude-skills-deep-dive/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
+      },{id: "books-the-republic",
+          title: 'The Republic',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
+              window.location.href = "/books/the_republic/";
+            },},{id: "books-writing-for-computer-science",
+          title: 'Writing for Computer Science',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/writing_for_cs/";
+            },},{id: "books-the-fine-art-of-small-talk",
+          title: 'The Fine Art of Small Talk',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/fine_art_of_small_talk/";
+            },},{id: "books-nexus-a-brief-history-of-information-networks-from-the-stone-age-to-ai",
+          title: 'Nexus: A Brief History of Information Networks from the Stone Age to AI...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/nexus/";
+            },},{id: "books-痛苦是条虫",
+          title: '痛苦是条虫',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/tongku_shi_tiao_chong/";
+            },},{id: "books-正道",
+          title: '正道',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/zhengdao/";
             },},{id: "news-our-paper-precise-sparse-abstract-execution-via-cross-domain-interaction-has-been-accepted-at-icse-2024",
           title: 'Our paper “Precise Sparse Abstract Execution via Cross-Domain Interaction” has been accepted at...',
           description: "",
