@@ -2,7 +2,7 @@
 layout: book-review
 title: "痛苦是条虫"
 author: 麦家
-isbn: "9787521779509"
+cover: assets/img/book_covers/tongku.jpg
 categories: nonfiction literature interview chinese
 date: 2025-02-01
 started: 2025-02-01

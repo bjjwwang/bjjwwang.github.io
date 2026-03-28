@@ -2,7 +2,7 @@
 layout: book-review
 title: "正道"
 author: 冯唐
-isbn: "9787572623097"
+cover: assets/img/book_covers/zhengdao.jpg
 categories: nonfiction philosophy management chinese
 date: 2025-03-01
 started: 2025-03-01
