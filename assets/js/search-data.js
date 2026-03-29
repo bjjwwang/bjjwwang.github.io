@@ -72,7 +72,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-icse-2026-程序分析论文深度解读",
+            },{id: "post-当-ai-被-骗-了-聊聊-llm-prompt-injection-与防御",
+        
+          title: "当 AI 被「骗」了：聊聊 LLM Prompt Injection 与防御",
+        
+        description: "从台大 ML HW1 出发，聊聊 Prompt Injection 的攻击手法、防御范式，以及 LLM 安全的根本困境",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/llm-prompt-injection-defense/";
+          
+        },
+      },{id: "post-icse-2026-程序分析论文深度解读",
         
           title: "ICSE 2026 程序分析论文深度解读",
         
