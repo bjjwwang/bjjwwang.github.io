@@ -162,6 +162,31 @@ SVF 本身是 C++ 写的，提供了 `wpa`、`saber` 等命令行工具。但我
 
 而且 MCP Server 本身用 Python 写（FastMCP），和 pysvf 天然兼容，省去了跨语言通信的麻烦。
 
+## TODO：下一步——甩掉 LLVM，用 tree-sitter 做轻量版
+
+现在这个方案有一个很"重"的地方：**依赖 LLVM 工具链**。你需要装 clang、opt，整个 LLVM 18 大概 1.5GB，还得保证源码能完整编译通过。如果代码里 `#include` 了一个本地没有的头文件，clang 直接报错，分析就跑不了。
+
+所以下一步计划是做一个 **tree-sitter 版本**，彻底换掉底层：
+
+| | 当前版本 (LLVM + pysvf) | 未来版本 (tree-sitter) |
+|---|---|---|
+| 安装 | 需要 LLVM 18 (~1.5GB) + pysvf + Z3 | `pip install tree-sitter tree-sitter-c` 就行 |
+| 编译步骤 | `.c` → clang → `.ll` → opt → 分析 | 直接解析源码，**零编译** |
+| 不完整代码 | 编译不过就跑不了 | tree-sitter 天然支持 **partial parsing**，写了一半的代码也能分析 |
+| 子模块分析 | 必须拿到完整翻译单元 | 可以只分析单个函数、单个文件片段 |
+| 分析深度 | LLVM IR 级别：跨函数指针分析、数据流 | AST 级别：模式匹配、结构检查 |
+
+tree-sitter 的核心优势是：
+
+1. **零编译依赖** — 不需要 clang，不需要头文件，`pip install` 一行搞定
+2. **容错解析** — 代码有语法错误？没关系，tree-sitter 会构建一棵带 `ERROR` 节点的部分语法树，其余部分照常分析
+3. **增量解析** — 改了一行代码，不用重新解析整个文件，只更新受影响的 AST 节点
+4. **原生源码映射** — 分析结果可以直接定位到源码行列号，不用像 LLVM IR 那样通过 debug info 反查
+
+当然 tradeoff 也很明显：tree-sitter 拿到的是语法树，不是 LLVM IR，所以像 pysvf 那种基于 value-flow 的跨函数指针分析就做不了了。但对于 buffer overflow 的很多常见 pattern（数组越界、循环边界错误、`memcpy` 大小不匹配），在 AST 层面做模式匹配已经能覆盖相当多的场景。
+
+两个版本不冲突——轻量版覆盖日常开发的快速检查，重量级版本用于需要精确分析的场景。
+
 ## 代码
 
 项目开源在 [**github.com/bjjwwang/SVF-MCP**](https://github.com/bjjwwang/SVF-MCP)，欢迎试用和反馈。
