@@ -72,7 +72,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-当-ai-被-骗-了-聊聊-llm-prompt-injection-与防御",
+            },{id: "post-让-cursor-帮你找-bug-用-mcp-把-svf-静态分析接进-ai-编辑器",
+        
+          title: "让 Cursor 帮你找 Bug：用 MCP 把 SVF 静态分析接进 AI 编辑器",
+        
+        description: "把 SVF 的 buffer overflow 检测封装成 MCP Server，接入 Cursor AI，实现在聊天框里一句话就能跑静态分析",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/svf-mcp-cursor-buffer-overflow/";
+          
+        },
+      },{id: "post-当-ai-被-骗-了-聊聊-llm-prompt-injection-与防御",
         
           title: "当 AI 被「骗」了：聊聊 LLM Prompt Injection 与防御",
         
