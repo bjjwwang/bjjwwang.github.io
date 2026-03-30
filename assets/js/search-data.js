@@ -83,6 +83,17 @@ ninja.data = [{
             window.location.href = "/blog/2026/svf-mcp-cursor-buffer-overflow/";
           
         },
+      },{id: "post-一个宏伟的计划-和它遭遇的第一堵墙",
+        
+          title: "一个宏伟的计划，和它遭遇的第一堵墙",
+        
+        description: "想让 SVF 进驻 Cursor 成为 AI skill？先过 Tree-sitter 这关——然后发现，Tree-sitter 只是万里长征的第一步",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/svf-multilang-treesitter/";
+          
+        },
       },{id: "post-当-ai-被-骗-了-聊聊-llm-prompt-injection-与防御",
         
           title: "当 AI 被「骗」了：聊聊 LLM Prompt Injection 与防御",
