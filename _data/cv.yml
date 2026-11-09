@@ -80,6 +80,16 @@ cv:
           - Developed elastic scheduling mechanisms for dynamically scaling CTR training pods, integrating with MLFlow for visualization.
 
     Publications:
+      - title: "Multi-Stage On-Demand Program Slicing for Modular Analysis of Multi-Threaded Programs"
+        authors:
+          - Jiawei Yang
+          - Xiao Cheng
+          - Jiawei Wang
+          - Xiapu Luo
+          - Yulei Sui
+        publisher: "ISSTA 2026"
+        releaseDate: "2026"
+
       - title: "Towards Efficient Abstract Interpretation by Unleashing the Power of Selective Widening"
         authors:
           - Jiawei Wang
